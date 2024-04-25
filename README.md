@@ -11,18 +11,18 @@ This is a script to get metadata from video file. It takes one or more video fil
 
 ## Instructions
 
-Install dependencies
+- Install dependencies
 
 ```
 pnpm i
 ```
 
-Create a new folder "input" in the root of the project and add any videos file you want to process
+- Create a new folder "input" in the root of the project and add any videos file you want to process
 
-Run the script
+- Run the script
 
 ```
 pnpm getVideoInfo
 ```
 
-See JSON file in output folder
+- See JSON file in output folder
