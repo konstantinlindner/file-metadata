@@ -6,7 +6,7 @@ This is a script to get metadata from video file. It takes one or more video fil
 - extension (i.e "mp4")
 - mime (i.e "video/mp4")
 - hash (hexadecimal sha256 hash of the file)
-- durationMS (duration in ms)
+- durationMs (duration in ms)
 - size (file size in bytes)
 
 ## Instructions
