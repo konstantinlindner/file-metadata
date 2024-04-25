@@ -22,7 +22,7 @@ pnpm i
 - Run the script
 
 ```
-pnpm getVideoInfo
+pnpm getMetadata
 ```
 
 - See JSON file in output folder
