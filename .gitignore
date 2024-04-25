@@ -1,0 +1,9 @@
+# input and output files
+input/*
+output/*
+
+# node modules
+node_modules/
+
+# DS_Store
+.DS_Store
