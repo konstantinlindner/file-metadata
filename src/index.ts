@@ -17,15 +17,18 @@ async function getVideoInfo() {
 
     const hash = crypto.createHash('sha256').update(fileBuffer).digest('hex');
 
-    const duration = await new Promise((resolve, reject) => {
-      ffmpeg.ffprobe(filePath, (err, metadata) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(metadata.format.duration);
-        }
-      });
-    });
+    const duration: number | undefined = await new Promise(
+      (resolve, reject) => {
+        ffmpeg.ffprobe(filePath, (err, metadata) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(metadata.format.duration);
+          }
+        });
+      }
+    );
+    const durationMs = duration ? Math.round(duration * 1000) : undefined;
 
     const size = fileBuffer.byteLength;
 
@@ -34,7 +37,7 @@ async function getVideoInfo() {
       extension,
       mime,
       hash,
-      duration,
+      durationMs,
       size,
     });
   }
