@@ -11,12 +11,14 @@
   "devDependencies": {
     "@types/fluent-ffmpeg": "^2.1.24",
     "@types/node": "^20.12.7",
+    "@types/papaparse": "^5.3.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.0.2",
     "file-type": "^19.0.0",
-    "fluent-ffmpeg": "^2.1.2"
+    "fluent-ffmpeg": "^2.1.2",
+    "papaparse": "^5.4.1"
   }
 }
