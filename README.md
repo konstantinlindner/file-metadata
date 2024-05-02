@@ -2,7 +2,7 @@
 
 This is a script to get metadata from video files or from urls in a CSV file. It will output the results in folder "output" as both CSV and JSON.
 
-For files, it takes one or more video files and returns both a CSV and a JSON file with fields:
+For file input, it takes one or more video files and returns both a CSV and a JSON file with fields:
 
 - file (filename)
 - extension (i.e "mp4")
@@ -12,7 +12,7 @@ For files, it takes one or more video files and returns both a CSV and a JSON fi
 - durationMs (duration in ms)
 - size (file size in bytes)
 
-For CSV, it takes a single CSV file with at least one header named "link" containing the urls. It will return a CSV and JSON file with the same fields as in the input file, with the addition of fields:
+For CSV input, it takes a single CSV file with at least one header named "link" containing the urls. It will return a CSV and JSON file with the same fields as in the input file, with the addition of fields:
 
 - duration (duration in seconds)
 - durationMs (duration in ms)
