@@ -21,8 +21,14 @@ For CSV input, it takes a single CSV file with at least one header named "link" 
 
 - Install dependencies
 
-```
+```bash
 pnpm i
+```
+
+- Install FFmpeg on your machine if you don't already have it
+
+```bash
+brew install ffmpeg
 ```
 
 To utilize the file option, create a directory "fileInput" in the root of the project and add any video files you want to process.
@@ -33,7 +39,7 @@ See example directory for example files and structure.
 
 - Run the script
 
-```
+```bash
 pnpm getMetadata
 ```
 
