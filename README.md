@@ -1,6 +1,8 @@
-# file-metadata
+# video-utils
 
-This is a script to get metadata from video files or from urls in a CSV file. It will output the results in folder "output" as both CSV and JSON.
+This repository contains utilties for in-app video content. It includes tools to get metadata from video files or urls in a CSV file as well as video compression scripts.
+
+## Metadata
 
 For file input, it takes one or more video files and returns both a CSV and a JSON file with fields:
 
@@ -16,6 +18,8 @@ For CSV input, it takes a single CSV file with at least one header named "link" 
 
 - duration (duration in seconds)
 - durationMs (duration in ms)
+
+## Video compression
 
 The script can also compress video files using FFmpeg.
 
@@ -37,7 +41,7 @@ pnpm i
 
 - To utilize the CSV option, create a directory "csvInput" in the root of the project and add a single CSV file. The file must contain a header called "link". It can optionally contain any other fields you may want.
 
-- To compress video files, place any videos inside a directory named "fileInput" in the root of the project and choose the option to create low res videos after running the script.
+- To compress video files, place any videos inside the directory named "fileInput" in the root of the project and choose the option to create low res videos after running the script.
 
 3. Run the script
 
