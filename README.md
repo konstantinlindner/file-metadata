@@ -17,30 +17,32 @@ For CSV input, it takes a single CSV file with at least one header named "link" 
 - duration (duration in seconds)
 - durationMs (duration in ms)
 
+The script can also compress video files using FFmpeg.
+
 ## Instructions
 
-- Install dependencies
-
-```bash
-pnpm i
-```
-
-- Install FFmpeg on your machine if you don't already have it
+1. Install FFmpeg on your machine if you don't already have it
 
 ```bash
 brew install ffmpeg
 ```
 
-To utilize the file option, create a directory "fileInput" in the root of the project and add any video files you want to process.
+2. Install dependencies
 
-To utilize the CSV option, create a directory "csvInput" in the root of the project and add a single CSV file. The file must contain a header called "link". It can optionally contain any other fields you may want.
+```bash
+pnpm i
+```
 
-See example directory for example files and structure.
+- To utilize the file option, create a directory "fileInput" in the root of the project and add any video files you want to process.
 
-- Run the script
+- To utilize the CSV option, create a directory "csvInput" in the root of the project and add a single CSV file. The file must contain a header called "link". It can optionally contain any other fields you may want.
+
+- To compress video files, place any videos inside a directory named "fileInput" in the root of the project and choose the option to create low res videos after running the script.
+
+3. Run the script
 
 ```bash
 pnpm getMetadata
 ```
 
-- Once run, you get to select if you want to get metadata from files, CSV or both. Let the script complete. Once finished, results will be found in the output folder.
+- Once run, you get to select what you want to do. Let the script complete. Once finished, results will be found in the output folder.
