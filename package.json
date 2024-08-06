@@ -6,7 +6,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "getMetadata": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts"
+    "launch": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts"
   },
   "devDependencies": {
     "@types/fluent-ffmpeg": "^2.1.24",
