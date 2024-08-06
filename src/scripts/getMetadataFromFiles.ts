@@ -9,6 +9,10 @@ export default async function getMetadataFromFiles() {
   const results = [];
 
   for (const file of files) {
+    if (file === '.DS_Store') {
+      continue;
+    }
+
     const filePath = `fileInput/${file}`;
     const fileBuffer = readFileSync(filePath);
 

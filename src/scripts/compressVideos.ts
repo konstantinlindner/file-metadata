@@ -7,6 +7,10 @@ export default async function compressVideos() {
   const files = readdirSync('fileInput');
 
   for (const file of files) {
+    if (file === '.DS_Store') {
+      continue;
+    }
+
     const filePath = `fileInput/${file}`;
 
     await new Promise<void>((resolve, reject) => {
