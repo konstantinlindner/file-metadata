@@ -42,7 +42,7 @@ pnpm i
 3. Run the script
 
 ```bash
-pnpm getMetadata
+pnpm launch
 ```
 
 - Once run, you get to select what you want to do. Let the script complete. Once finished, results will be found in the output folder.
